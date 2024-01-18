@@ -5,12 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="/java_Servlet_repeat-1.0-SNAPSHOT/second" method="POST">
+    <form action="/java_Servlet_repeat/second" method="POST">
         <label> Login:
             <input type="text" placeholder="Login" name="login">
         </label>
         <label> Password:
             <input type="password" placeholder="Password" name="password">
+        </label>
+        <input type="submit" value="Send">
+    </form>
+    <form action="/java_Servlet_repeat/third" method="POST" enctype="multipart/form-data">
+        </br>
+        <label> Add file:
+            <input type="text" placeholder="author-name" name="author-name">
+        </label>
+        <label> Add file:
+            <input type="file" placeholder="file" name="file">
         </label>
         <input type="submit" value="Send">
     </form>
