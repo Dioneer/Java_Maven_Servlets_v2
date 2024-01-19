@@ -1,6 +1,7 @@
 <%@ page import="java.time.LocalDateTime"%>
 <%@ page import="java.util.List"%>
 <%@ page import="Pegas.User"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!Doctype html>
 <html>
 <head>
@@ -11,6 +12,7 @@
 <p><a href="/java_Servlet_repeat/second">second</a>
 <a href="/java_Servlet_repeat/start">start</a>
 <a href="/java_Servlet_repeat/first.html">first</a>
+<a href="/java_Servlet_repeat/index1.jsp">jspIndex1</a>
 </p>
 <p>
 <%response.getWriter().write("First message");
@@ -29,13 +31,13 @@ User fUser = users.get(0);%>
 <table>
 <%for(User user:users){%>
 <tr>
-<td><i><%=user.getName()%></i></td>
-<td><%if(user.getCountry().equals("Vietnam")){%>
-<b><%=user.getCountry()%></b>
-<%}else{%>
-<i><%=user.getCountry()%></i>
-<%}%></td>
- <td><i><%=user.getAge()%></i></td>
+    <td><i><%=user.getName()%></i></td>
+    <td><%if(user.getCountry().equals("Vietnam")){%>
+        <b><%=user.getCountry()%></b>
+    <%}else{%>
+        <i><%=user.getCountry()%></i>
+    <%}%></td>
+    <td><i><%=user.getAge()%></i></td>
 </tr>
 <%}%>
 </table>

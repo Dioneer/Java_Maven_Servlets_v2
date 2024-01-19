@@ -24,7 +24,7 @@ public class SecondServlet extends HttpServlet {
         Map<String, String[]> params = request.getParameterMap();
         params.forEach((key, value) ->  pw.write(key + " : " + Arrays.toString(value)));
         String str = formatParams(request);
-        pw.write("<p>Method GET</br>URI: "+uri+ "</br>Params:</br>"+str+"</p>");
+        pw.write("<p>Method GET\nURI: "+uri+ "</br>Params:</br>"+str+"</p>");
         pw.write("<p>"+param1+"</p>");
         pw.write("<p>"+param2+"</p>");
         pw.write("<p>"+url.toString()+"</p>");
