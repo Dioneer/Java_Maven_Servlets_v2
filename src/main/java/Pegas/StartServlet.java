@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 @WebServlet("/start")
 public class StartServlet extends HttpServlet {
-    private final static Logger log = Logger.getLogger(ThirdServlet.class.getName());
+    private final static Logger log = Logger.getLogger(StartServlet.class.getName());
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
         log.info("Method init =)");

@@ -11,7 +11,8 @@
 <h2>Hello World!</h2>
 <p><a href="/java_Servlet_repeat/second">second</a>
 <a href="/java_Servlet_repeat/start">start</a>
-<a href="/java_Servlet_repeat/first.html">first</a>
+<a href="/java_Servlet_repeat/first.html">first_html</a>
+<a href="/java_Servlet_repeat/fourth">fourth</a>
 <a href="/java_Servlet_repeat/index1.jsp">jspIndex1</a>
 </p>
 <p>
